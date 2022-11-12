@@ -1,10 +1,10 @@
-title: Drica Zenck
+title: Drica Zenck - Test
 description: >-
   Testing github pages
 baseurl: ""
 url: "https://dricazenck.github.io/"
 
-# timezone: US/Eastern
+timezone: Central European Time (CET)
 
 theme: jekyll-theme-minimal
 plugins:

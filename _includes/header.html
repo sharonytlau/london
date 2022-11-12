@@ -1,6 +1,7 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ "assets/css/style.css?v=" | append: site.github.build_revision }}">
-    {%- seo -%}
-  </head>
+<header>
+  <h1><a href="{{- "/" | absolute_url -}}">{{- site.title -}}</a></h1>
+
+  <p>{{- site.description -}}</p>
+
+  <p><i><small>This website was last updated on {{ site.time | date: '%d/%m/%Y %r'}} {{ site.timezone }}</small></i></p>
+</header>
