@@ -10,10 +10,6 @@
 
       {{ content }}
 
-      {%- assign mentor = site.data.mentors | sort -%}
-      <div>Mentor: {{- mentor.name -}}</div>
-
-      {%- include mentor.html -%}
     </section>
     {%- include footer.html -%}
   </div>

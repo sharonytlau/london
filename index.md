@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Example page for test"
+title: "Women Who Code London - Mentorship Program"
 ---
 
-TBD - home page
+Women Who Code London - Mentorship Program
