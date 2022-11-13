@@ -5,17 +5,15 @@
 
 <body>
   <div class="wrapper">
-    {%- include header.html -%}
     <section>
       <title>{{- page.title -}}</title>
 
       {{ content }}
 
       {%- assign mentor = site.data.mentors | sort -%}
+      <div>Mentor: {{- mentor.name -}}</div>
 
-        {%- if mentor.name -%}
-            <div>{{- mentor.name -}}</div>
-        {%- endif -%}
+      {%- include mentor.html -%}
     </section>
     {%- include footer.html -%}
   </div>
