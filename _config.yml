@@ -1,10 +1,15 @@
-# Build settings
-# remote_theme: pages-themes/midnight@v0.2.0
-theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass/
 
 # Settings
 title: "Women Who Code London"
-description: "Mentoring Program v3"
+subtitle: "Mentoring Program"
+description: "Mentoring Program v4"
+author: Adriana Zenck Zimmermann
 
 # GitHub
 github:
