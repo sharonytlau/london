@@ -1,3 +1,3 @@
 # Description
 
-Women Who Code London - Mentorship Program example page.
+Women Who Code London - Mentorship Program
