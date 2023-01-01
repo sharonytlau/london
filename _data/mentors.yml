@@ -1,0 +1,27 @@
+- name: Adriana Zencke Zimmermann
+  description: I am a mother, a wife, and a Software Engineer. I worked for several years as a full-stack engineer, but in the last 5 years focus on the backend which I found to be my passion. 
+  position: Senior Software Engineer at Personio
+  image: https://media.licdn.com/dms/image/C4E03AQFb3yz9xF917A/profile-displayphoto-shrink_800_800/0/1650927176851?e=1678320000&v=beta&t=soCLefighqi-aVaO40bQxgs4z5tDj9X5ZCD09jaP3as
+  network:
+    - name: linkedin
+      link: https://www.linkedin.com/in/dricazenck/
+    - name: github
+      link: https://github.com/dricazenck
+    - name: twitter
+      link: https://twitter.com/DricaZenck
+- name: Eleonora Belova
+  position: QA Engineer at IBM
+  description: For me, volunteering is a great investment, a tool to develop skills, and an opportunity to gain experience while helping others! I am so excited about the opportunity to do even more as a Director! Can’t wait to brainstorm, discuss and create new things together!
+  image: https://media.licdn.com/dms/image/C4E03AQEV0jEE1z0BbA/profile-displayphoto-shrink_800_800/0/1651913271528?e=1678320000&v=beta&t=zc9ZQRqg5_MBq1m_WRsqRyyZsJ5xDyfnGE6bktR6RgE
+  network:
+    - name: linkedin
+      link: https://www.linkedin.com/in/eleonora-belova-7069baa5/
+    - name: twitter
+      link: https://twitter.com/eleonora-belova
+
+# - name: Irina Kamalova
+#   position: Backend Software Engineer at Revolut
+#   description: Had the responsibility to complete the product development lifecycle of successfully launched applications. Implemented lots of well-designed solutions in Java and Scala. Worked with high-load components that handled responses from millions of users and managed it's 24/7 availability at Yandex.
+#   linkedin: https://www.linkedin.com/in/irina-kamalova/
+#   twitter: @irina-kamalova
+

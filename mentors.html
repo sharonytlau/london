@@ -1,0 +1,31 @@
+---
+layout: default
+title: Mentors
+---
+<main role="main" class="container">
+    <h1 class="mt-4">{{page.title}}</h1>
+
+    <div>
+        Below you can see all our active mentors.
+    </div>
+    
+    {% for mentor in site.data.mentors %}
+        <div class="row">
+            <div class="col-2">
+                <img class="mentors-photo" src="{{mentor.image}}" alt="...">
+            </div>
+            <div class="col-10">
+                <p class="lead">{{mentor.name}}</p>
+                <p>{{mentor.position}}</p>
+                <p>{{mentor.description}}</p>
+                <p>
+                    {% for network in mentor.network %}
+                        <a class="network-icons" href="{{network.link}}">{{network.name}}</a>
+                    {% endfor %}
+                </p>
+                
+            </div>
+        </div>
+    {% endfor %}
+
+</main>
