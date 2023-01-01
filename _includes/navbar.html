@@ -1,13 +1,18 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Logo</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-lg navbar-light lined">
+  
+  <a class="navbar-brand" href="#"><img class="brand" src="assets/images/logo.png"></a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      {% for item in site.data.navbar %}
-      <a class="nav-item nav-link" href="{{item.link}}">{{ item.name }}</a>
-      {% endfor %}
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+        <ul class="navbar-nav  ml-auto">
+            {% for item in site.data.navbar %}
+            <li class="nav-item">
+                <a class="nav-link" href="{{item.link}}">{{ item.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
-  </div>
 </nav>

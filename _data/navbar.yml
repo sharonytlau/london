@@ -1,6 +1,8 @@
 - name: Home
   link: /
-- name: FAQ
-  link: /faq
+- name: Mentors
+  link: /mentors
+- name: Resources
+  link: /resources
 - name: About
   link: /about
