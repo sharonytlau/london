@@ -1,0 +1,27 @@
+---
+layout: default
+title: Resources
+---
+<main role="main" class="container">
+    <h1 class="mt-4">{{page.title}}</h1>
+    
+    <ul class="resources">
+        {% for resource in site.data.resources %}
+            <li>
+                <a class="nav-item nav-link" href="{{resource.link}}">{{resource.title}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+
+    <h3>Some tips for successful mentorship relationships:</h3>
+    <div class="row">
+        <div class="col">
+            <p><span class="font-weight-bold">[Goals]</span> Agree on goals and definitions of progress at the beginning of the process</p>
+            <p><span class="font-weight-bold">[Commitment]</span> Agree on commitment in advance</p>
+            <p><span class="font-weight-bold">[Session Formats]</span> It can be traditional sessions, but also mentors can organise study groups</p>
+            <p><span class="font-weight-bold">[Progress]</span> Track your progress using tools you like (spreadsheets, trello, notion) and share this document</p>
+            <p><span class="font-weight-bold">[Community]</span> Join our Slack space to hear more about mentorship related events and ask questions if you have any</p>
+        </div>
+    </div>
+</main>
