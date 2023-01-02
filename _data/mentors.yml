@@ -18,10 +18,14 @@
       link: https://www.linkedin.com/in/eleonora-belova-7069baa5/
     - name: twitter
       link: https://twitter.com/eleonora-belova
-
-# - name: Irina Kamalova
-#   position: Backend Software Engineer at Revolut
-#   description: Had the responsibility to complete the product development lifecycle of successfully launched applications. Implemented lots of well-designed solutions in Java and Scala. Worked with high-load components that handled responses from millions of users and managed it's 24/7 availability at Yandex.
-#   linkedin: https://www.linkedin.com/in/irina-kamalova/
-#   twitter: @irina-kamalova
-
+    - name: github
+      link: https://github.com/nora-weisser
+- name: Irina Kamalova
+  position: Backend Software Engineer at Revolut & Director of Women Who Code London
+  description: Had the responsibility to complete the product development lifecycle of successfully launched applications. Implemented lots of well-designed solutions in Java and Scala. Worked with high-load components that handled responses from millions of users and managed it's 24/7 availability at Yandex.
+  image: https://media.licdn.com/dms/image/C5603AQH_NVDatCxPvA/profile-displayphoto-shrink_800_800/0/1561757692488?e=1678320000&v=beta&t=hZcMB6XK5QRGDbHCBndKeRG6KANn_PTaIhteBLi0gVU
+  network:
+  - name: linkedin
+    link: https://www.linkedin.com/in/irina-kamalova/
+  - name: github
+    link: https://github.com/irenkamalova
