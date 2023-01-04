@@ -22,3 +22,10 @@ Run on terminal `bundle install`
 Run on terminal `bundle exec jekyll serve`
 
 Access the page on browser: http://127.0.0.1:4000
+
+
+### External Links about GitHub Pages
+
+* [GitHub Pages Doc](https://docs.github.com/en/pages) 
+* [About GitHub Pages and Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)
+* [Test locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) 
