@@ -1,0 +1,57 @@
+.banner {
+    background-color: $teal;
+
+    .title {
+        margin-top: 80px;
+    }
+
+    h1, h2, h3 {
+        color: $white;
+    }
+
+    .banner-image {
+        @include float-right;
+    
+        width: 350px;
+    }
+}
+
+.container {
+    
+    .content {
+        margin: 50px;
+    }
+
+    .registration {
+        margin-top: 40px;
+
+        ul {
+            list-style: none;
+        }
+
+        span {
+            font-weight: $font-weight-bold !important;
+            font-size: larger;
+        }
+    }
+
+    button {
+        display: inline-block;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background-color: $teal;
+        color: $white;
+        font-size: 20px;
+        border-radius: 6px;
+        padding: 0 33px;
+        font-weight: bold;
+        height: 50px;
+        cursor: pointer;
+        line-height: 50px;
+        text-align: center;
+        margin: 20px 0 0 0;
+        text-decoration: none;
+    }
+}
