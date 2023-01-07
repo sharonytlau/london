@@ -1,0 +1,45 @@
+---
+layout: default
+title: Meet our core team
+---
+
+<main role="main" class="container team">
+    
+    <h1 class="mt-4">{{page.title}}</h1>
+
+    <div class="row">
+        {% for person in site.data.team %}
+            <div class="col-3">
+                <img class="profile-photo" src="{{person.image}}" alt="...">
+                <p class="lead">{{person.name}}</p>
+                <p>{{person.position}}</p>
+                <p>{{person.comment}}</p>
+                <p>
+                    {% for network in person.network %}
+                        <a class="network-icons" href="{{network.link}}">{{network.name}} </a>
+                    {% endfor %}
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="row">
+        <h2 class="mt-4">Contributors</h1>
+    </div>
+    <div class="row">
+        {% for person in site.data.colaborators %}
+            <div class="col-3">
+                <img class="profile-photo" src="{{person.image}}" alt="...">
+                <p class="lead">{{person.name}}</p>
+                <p>{{person.comment}}</p>
+                <p>
+                    {% for network in person.network %}
+                        <a class="network-icons" href="{{network.link}}">{{network.name}} </a>
+                    {% endfor %}
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+
+
+</main>

@@ -1,0 +1,13 @@
+- name: Ayla Cura
+  image: https://ca.slack-edge.com/TGYGA50DQ-U033JJFKZ7B-dd1dce68c353-512
+  comment: 
+  network:
+    - name: linkedin
+      link: https://www.linkedin.com/in/aylacura/
+      
+- name: Sumeyya Javaid
+  image: https://ca.slack-edge.com/TGYGA50DQ-U030A8KK4R3-6acef534b898-512
+  comment: 
+  network:
+    - name: linkedin
+      link: https://www.linkedin.com/in/sumeyya-javaid/
