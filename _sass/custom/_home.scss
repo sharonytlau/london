@@ -13,6 +13,12 @@
 }
 
 .container {
+
+    h2 {
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+
     .content {
         margin: 50px;
     }
@@ -52,5 +58,11 @@
         text-align: center;
         margin: 20px 0 0 0;
         text-decoration: none;
+    }
+}
+
+.timeline {
+    .photo {
+        width: 800px;
     }
 }
