@@ -1,52 +1,123 @@
+- name: Rajani Rao
+  type: both
+  position: Principal Engineer at U-Blox Cambridge
+  bio: 20+ years of experience in building Web and IoT solutions in the cloud. I am passionate about career progression and can help engineers transition to the next level
+  image: https://media.licdn.com/dms/image/C4D03AQEMuSo7GfyyJg/profile-displayphoto-shrink_800_800/0/1659466519807?e=1678924800&v=beta&t=59rFGFjvLe5Ovrqb5Y9SKndlbvT-T2RnyA9sKLmcmfk
+  location: Cambridge
+  languages:
+    - English
+  skills: 
+    experience: 16+ years
+    areas: 
+      - Distributed Systems 
+      - DevOps 
+      - Security 
+      - Network Engineering 
+      - Engineering management
+    languages: C#, C++, C, Python, Html
+    focus: 
+      - switch career to IT
+      - grow from beginner to mid-level
+      - grow from mid-level to senior-level
+      - change specialisation within IT
+    mentee: Open minded and committed individual
+  network:
+    - linkedin: https://www.linkedin.com/in/rajaniraog/
+    
+- name: Eleonora Belova
+  position: QA Engineer at IBM Company, Director at Women Who Code London
+  type: both
+  location: Amsterdam, Netherlands
+  bio: For me, volunteering is a great investment, a tool to develop skills, and an opportunity to gain experience while helping others! I am so excited about the opportunity to do even more as a Director! Can’t wait to brainstorm, discuss and create new things together!
+  image: https://media.licdn.com/dms/image/C4E03AQEV0jEE1z0BbA/profile-displayphoto-shrink_800_800/0/1651913271528?e=1678320000&v=beta&t=zc9ZQRqg5_MBq1m_WRsqRyyZsJ5xDyfnGE6bktR6RgE
+  languages: 
+    - English
+  network:
+    - linkedin: https://www.linkedin.com/in/eleonora-belova-7069baa5/
+    - twitter: https://twitter.com/eleonora-belova
+    - github: https://github.com/nora-weisser 
+  skills: 
+    experience: 5-7 years
+    areas: 
+      - Quality Assurance
+    mentee: add some info here
+    languages: Python, Html, CSS
+    extra: Test Automation, Quality Assurance, Functional Testing, Selenium WebDriver, Amazon Web Services
+
+- name: Irina Kamalova
+  type: both
+  position: Backend Software Engineer at Revolut
+  bio: Irina is a backend SWE at Revolut and if the Director of WWCode London. Her job involved constantly completing the product development lifecycle of successfully launched applications and supporting requests from 20 million customers at Revolut.  She worked with high-load components that handled responses from millions of users and managed its 24/7 availability at Yandex. She as also worked with solutions for Big Data on SMACK stack, and has designed and implemented several solutions to improve data management for Alveo Technology. 
+  image: https://ca.slack-edge.com/TGYGA50DQ-U01H51ELUNB-889f0bd6db5d-512
+  location: London, United Kingdom
+  languages:
+    - English
+  skills: 
+    experience: 5-7 years
+    areas: 
+        - Backend Developer
+        - Distributed Systems
+        - Data Engineering
+    languages: Java, Kotlin, Scala, Python
+    focus: 
+      - grow from mid-level to senior-level	grow beyond 
+      - grow from beginner to mid-level
+    mentee: A mentee who wants to grow from Mid to Senior, or want to change their job and prepare for an interview for Mid/Senior position
+  network:
+    - linkedin: https://www.linkedin.com/in/irina-kamalova/
+    - github: https://github.com/irenkamalova
+
 - name: Adriana Zencke Zimmermann
-  bio: I am a mother, a wife, and a Software Engineer. I worked for several years as a full-stack engineer, but in the last 5 years focus on the backend which I found to be my passion. 
+  bio: I am a mother, a wife, and a Software Engineer. I graduated in Computer Science in Brazil and have been working as Software Engineer for over 12 years, and in the last years focused on the backend, which I found to be my passion. I was born in Brazil and moved to Germany for about 7 years and now I am in Spain. I am always excited to help others, my goal is to empower women and support them with the difficulties I had and still have from time to time.
   position: Senior Software Engineer at Personio
-  mentee: Someone willing to learn new technologies or to improve her skills, looking for guidance on how to navigate the initial years in the industry or in the new company. Who is able to invest time in learning. We can both learn and grow with each other.
   image: https://media.licdn.com/dms/image/C4E03AQFb3yz9xF917A/profile-displayphoto-shrink_800_800/0/1650927176851?e=1678320000&v=beta&t=soCLefighqi-aVaO40bQxgs4z5tDj9X5ZCD09jaP3as
-  experience: 10-15 years
   location: València, Spain
+  type: both
   languages:
     - Portuguese
     - English
-  skills: Java, JavaScript, Kafka,Google Cloud Platform, HTML/CSS, Kubernetes, Linux, REST API, SQL
+  skills: 
+    experience: 10-15 years
+    areas: 
+      - Backend Developer
+      - Distributed Systems 
+      - Fullstack Developer
+    languages: Java, Javascript, Kotlin, Python
+    focus: 
+      - grow from mid-level to senior-level
+      - grow from beginner to mid-level
+      - switch career to IT
+    mentee: Someone willing to learn new technologies or to improve her skills, looking for guidance on how to navigate the initial years in the industry or in the new company. Who is able to invest time in learning. We can both learn and grow with each other.
+    extra: Best practices, Java, Kafka, Unit Test, Integration Test, Software Development Strategies, Technical Interview, GCP
   network:
-    - name: linkedin
-      link: https://www.linkedin.com/in/dricazenck/
-    - name: github
-      link: https://github.com/dricazenck
-    - name: twitter
-      link: https://twitter.com/DricaZenck
+    - linkedin: https://www.linkedin.com/in/dricazenck/
+    - twitter: https://twitter.com/DricaZenck
+    - github: https://github.com/dricazenck
+    - medium: https://medium.com/@dricazenck
 
-- name: Eleonora Belova
-  position: QA Engineer at IBM Company, Director at Women Who Code London
-  experience: 10-15 years
-  location: Amsterdam, Netherlands
-  bio: For me, volunteering is a great investment, a tool to develop skills, and an opportunity to gain experience while helping others! I am so excited about the opportunity to do even more as a Director! Can’t wait to brainstorm, discuss and create new things together!
-  mentee: ideal mentee profile
-  image: https://media.licdn.com/dms/image/C4E03AQEV0jEE1z0BbA/profile-displayphoto-shrink_800_800/0/1651913271528?e=1678320000&v=beta&t=zc9ZQRqg5_MBq1m_WRsqRyyZsJ5xDyfnGE6bktR6RgE
-  location: Amsterdam - Nederlands
+- name: Aishwarya Nair
+  type: ad-hoc
+  position: Data scientist at Trivago
+  bio: An experienced Data Scientist who likes to develop business ideas into implementable solutions by leveraging the power of Technology. Professional with 5+ years of experience in NLP, Computer Vision and Recommender models. Motivated by the challenge of working in cross-functional teams and leading projects from beginning to end. Passionate about mentoring and inspiring young women in the field of STEM.
+  image: https://media.licdn.com/dms/image/C4D03AQH1AWGXCGOuGw/profile-displayphoto-shrink_800_800/0/1614802363650?e=1678924800&v=beta&t=yGX2gKOWaLEJqTnCMoR-DVD2ZNGGn6zXuQik3PFas_Q
+  location: Germany
   languages:
     - English
+  skills: 
+    experience: 5-7 years
+    areas: 
+      - Data Science
+      - Machine Learning
+      - Data Engineering 
+      - Business Analysis 
+      - Product Management
+    languages: Python
+    focus: 
+      - change specialisation within IT
+      - switch career to IT
+      - grow from beginner to mid-level
+      - switch from IC to a management position
+    mentee: Whoever is interested /is working in the field of Data Science
+    extra: Resume review, mock interview, LinkedIn profile review and career growth advice
   network:
-    - name: linkedin
-      link: https://www.linkedin.com/in/eleonora-belova-7069baa5/
-    - name: twitter
-      link: https://twitter.com/eleonora-belova
-    - name: github
-      link: https://github.com/nora-weisser
-  skills: Test Automation, Python, Quality Assurance, Functional Testing, Selenium WebDriver, Amazon Web Services (AWS)
-- name: Irina Kamalova
-  position: Backend Software Engineer at Revolut & Director of Women Who Code London
-  bio: Had the responsibility to complete the product development lifecycle of successfully launched applications. Implemented lots of well-designed solutions in Java and Scala. Worked with high-load components that handled responses from millions of users and managed it's 24/7 availability at Yandex.
-  mentee: ideal mentee profile
-  image: https://media.licdn.com/dms/image/C5603AQH_NVDatCxPvA/profile-displayphoto-shrink_800_800/0/1561757692488?e=1678320000&v=beta&t=hZcMB6XK5QRGDbHCBndKeRG6KANn_PTaIhteBLi0gVU
-  location: London, United Kingdom
-  experience: 10-15 years
-  languages:
-    - English
-  skills: Java, SQL, Linux, Spring Framework, REST, Leadership, Reactive Programming 
-  network:
-  - name: linkedin
-    link: https://www.linkedin.com/in/irina-kamalova/
-  - name: github
-    link: https://github.com/irenkamalova
+    - linkedin: www.linkedin.com/in/aishwarya-nair-data-scientist

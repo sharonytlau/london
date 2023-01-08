@@ -16,7 +16,26 @@ title: Meet our community of mentors!
                     <img class="profile-photo" src="{{mentor.image}}" alt="...">
                     <div class="network">
                         {% for network in mentor.network %}
-                            <a class="network-icons" href="{{network.link}}">{{network.name}}</a>
+                            {% if network.linkedin %}
+                                <span><a href="{{network.linkedin}}" target="_blank">
+                                    {% include icons/linkedin.svg %}
+                                </a></span>
+                            {% endif %}
+                            {% if network.twitter %}
+                                <a href="{{network.twitter}}" target="_blank">
+                                    {% include icons/twitter.svg %}
+                                </a>
+                            {% endif %}
+                            {% if network.github %}
+                                <a href="{{network.github}}" target="_blank">
+                                    {% include icons/github.svg %}
+                                </a>
+                            {% endif %}
+                            {% if network.medium %}
+                                <a href="{{network.medium}}" target="_blank">
+                                    {% include icons/medium.svg %}
+                                </a>
+                            {% endif %}
                         {% endfor %}
                     </div>
                 </div>
