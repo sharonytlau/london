@@ -25,6 +25,8 @@
   network:
     - name: linkedin
       link: https://www.linkedin.com/in/marina-aguiar/
+    - name: github
+      link: https://github.com/marinaaguiar
 - name: Elena Fedorova
   position: Designer
   comment: <Several words from us>
