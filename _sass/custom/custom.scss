@@ -4,3 +4,11 @@
 @import "mentors";
 @import "resources";
 @import "team";
+
+
+h1, h2, h3, h4 {
+    @extend .text-center;
+
+    margin-top: 60px;
+    margin-bottom: 50px;
+}

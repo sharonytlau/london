@@ -13,14 +13,6 @@
 }
 
 .container {
-
-    h1, h2 {
-        @extend .text-center;
-
-        margin-top: 35px;
-        margin-bottom: 20px;
-    }
-
     .content {
         margin: 50px;
     }
