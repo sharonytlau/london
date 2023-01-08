@@ -1,12 +1,34 @@
 
 .mentors {
-
     .description {
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 
     .profile-photo {
-        width: 150px;
+        @extend .mx-auto;
+        @extend .d-block;
+        @extend .rounded;
+
+        width: 200px;
+        margin-top: 80px;
+        padding-left: 10px;
+    }
+
+    .card-title {
+        padding-top: 20px;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    .card-horizontal {
+        max-height: 400px;
+    }
+
+    .network {
+        @extend .text-center;
+        margin-top: 15px;
     }
 }
 
