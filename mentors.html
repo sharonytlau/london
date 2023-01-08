@@ -2,32 +2,48 @@
 layout: default
 title: Meet our community of mentors!
 ---
-<main role="main" class="mentors container">
+<div class="mentors container">
     <h1>{{page.title}}</h1>
 
     <div class="description">
-        Below you can see all our mentors. Application starts is February, 2023.
+        Below you can see all our mentors. The Application starts is February, 2023.
     </div>
     
-    <div class="list">
-        {% for mentor in site.data.mentors %}
-            <div class="row">
-                <div class="col-2">
+    {% for mentor in site.data.mentors %}
+        <div class="card">
+            <div class="card-horizontal">
+                <div class="img-square-wrapper">
                     <img class="profile-photo" src="{{mentor.image}}" alt="...">
-                </div>
-                <div class="col-10">
-                    <p class="lead">{{mentor.name}}</p>
-                    <p>{{mentor.position}}</p>
-                    <p>{{mentor.bio}}</p>
-                    <p>
+                    <div class="network">
                         {% for network in mentor.network %}
                             <a class="network-icons" href="{{network.link}}">{{network.name}}</a>
                         {% endfor %}
-                    </p>
-                    
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">Presentation</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                    <h4 class="card-title">
+                        {{mentor.name}}
+                    </h4>
+                    <h5 class="position">{{mentor.position}}</h5>
+                    <p class="card-text">{{mentor.bio}}</p>
+                    <div class="card-link">
+                        <a href="#" data-tf-popup="oQHsUP80" data-tf-iframe-props="title=Mentor Registration" data-tf-medium="snippet">Apply for this mentor</a>
+                    </div>
                 </div>
             </div>
-        {% endfor %}
-    </div>
+        </div>
+    {% endfor %}
 
-</main>
+    </div>
