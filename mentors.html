@@ -1,31 +1,33 @@
 ---
 layout: default
-title: Mentors
+title: Meet our community of mentors!
 ---
-<main role="main" class="container">
-    <h1 class="mt-4">{{page.title}}</h1>
+<main role="main" class="mentors container">
+    <h1>{{page.title}}</h1>
 
-    <div>
-        Below you can see all our active mentors.
+    <div class="description">
+        Below you can see all our mentors. Application starts is February, 2023.
     </div>
     
-    {% for mentor in site.data.mentors %}
-        <div class="row">
-            <div class="col-2">
-                <img class="mentors-photo" src="{{mentor.image}}" alt="...">
+    <div class="list">
+        {% for mentor in site.data.mentors %}
+            <div class="row">
+                <div class="col-2">
+                    <img class="profile-photo" src="{{mentor.image}}" alt="...">
+                </div>
+                <div class="col-10">
+                    <p class="lead">{{mentor.name}}</p>
+                    <p>{{mentor.position}}</p>
+                    <p>{{mentor.bio}}</p>
+                    <p>
+                        {% for network in mentor.network %}
+                            <a class="network-icons" href="{{network.link}}">{{network.name}}</a>
+                        {% endfor %}
+                    </p>
+                    
+                </div>
             </div>
-            <div class="col-10">
-                <p class="lead">{{mentor.name}}</p>
-                <p>{{mentor.position}}</p>
-                <p>{{mentor.bio}}</p>
-                <p>
-                    {% for network in mentor.network %}
-                        <a class="network-icons" href="{{network.link}}">{{network.name}}</a>
-                    {% endfor %}
-                </p>
-                
-            </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </div>
 
 </main>
