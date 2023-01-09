@@ -1,10 +1,10 @@
-- name: Home
+- name: HOME
   link: /
-- name: Mentors
+- name: MENTORS
   link: mentors
-- name: Resources
+- name: RESOURCES
   link: resources
-- name: Team
+- name: TEAM
   link: team
-- name: Code of Conduct
+- name: CODE OF CONDUCT
   link: code-of-conduct

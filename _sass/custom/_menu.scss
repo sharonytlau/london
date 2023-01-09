@@ -17,3 +17,34 @@
         }
     }
 }
+
+.navbar li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px 10px;
+  
+  }
+  
+  .navbar li > a {
+    color: rgba(33, 35, 38, 0.1);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .navbar li > a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+    
+  }
+  
+  .navbar li > a:hover::after, li > a.active-nav::after {
+    width: 100%;
+    background: $teal;
+  }

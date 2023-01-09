@@ -11,3 +11,5 @@
   network:
     - name: linkedin
       link: https://www.linkedin.com/in/sumeyya-javaid/
+    - name: twitter
+      link: https://twitter.com/_jasum_
