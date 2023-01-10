@@ -2,95 +2,63 @@
 layout: default
 title: Mentorship Resources
 ---
-<!--<main role="main" class="container">
-    <h1 class="mt-4">{{page.title}}</h1>
-    
-    <ul class="resources">
-        {% for resource in site.data.resources %}
-            <li>
-                <a class="nav-item nav-link" href="{{resource.link}}">{{resource.title}}</a>
-            </li>
-        {% endfor %}
-    </ul>
 
 
-    <h3>Some tips for successful mentorship relationships:</h3>
-    <div class="row">
-        <div class="col">
-            <p><span class="font-weight-bold">[Goals]</span> Agree on goals and definitions of progress at the beginning of the process</p>
-            <p><span class="font-weight-bold">[Commitment]</span> Agree on commitment in advance</p>
-            <p><span class="font-weight-bold">[Session Formats]</span> It can be traditional sessions, but also mentors can organise study groups</p>
-            <p><span class="font-weight-bold">[Progress]</span> Track your progress using tools you like (spreadsheets, trello, notion) and share this document</p>
-            <p><span class="font-weight-bold">[Community]</span> Join our Slack space to hear more about mentorship related events and ask questions if you have any</p>
-        </div>
+<div class="resources container">
+    <div class="material">
+        <h3 class="p-5">Mentorship Resources</h3>
     </div>
-</main> !-->
-
-<div class="container">
-    <h3 class="text-center">Mentorship Resources</h3>
-</div>
 
 
-<div class="container">
-    <div class="row g-3">
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="card">
-                <img src="assets/images/resources/pocketbook-mentees.png" alt="pocketbook-mentees" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Pocketbook for Mentees</h5>
-                    <a href="#" class="btn btn-outline-primary">Open</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="card">
-                <img src="assets/images/resources/pocketbook-mentors.png" alt="pocketbook-mentors" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Pocketbook for Mentors</h5>
-                    <a href="#" class="btn btn-outline-primary">Open</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="card">
-                <img src="assets/images/resources/checklist-mentees.png" alt="checklist-mentees" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Checklist For Mentees</h5>
-                    <a href="#" class="btn btn-outline-primary">Open</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="card">
-                <img src="assets/images/resources/checklist-mentors.png" alt="checklist-mentors" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Checklist For Mentors</h5>
-                    <a href="#" class="btn btn-outline-primary">Open</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-<div class="container">
-    <h3 class="text-center">Mentorship Blog Posts</h3>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-12 mt-3">
-            <div class="card">
-                <div class="card-horizontal">
-                    <div class="img-square-wrapper">
-                        <img class="" src="assets/images/resources/checklist-mentors.png" alt="blog-image">
-                    </div>
+    <div class="material">
+        <div class="row g-3">
+            {% for resources in site.data.resources %}
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="{{resources.image}}" alt="pocketbook-mentees" class="card-img-top">
                     <div class="card-body">
-                        <h4 class="card-title">WWCode London Offers Mentorship Tips</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">{{resources.title}}</h5>
+                        <a href={{resources.link}} class="btn btn-outline-primary">Open</a>
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="blog">
+        <h3 class="p-5">Mentorship Blog Posts</h3>
+    </div>
+
+    <div class="blog">
+        {% for blogs in site.data.blogs %}
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="card">
+                    <div class="card-horizontal">
+
+                        <div class="img-square-wrapper">
+                            <img class="" src="assets/images/resources/checklist-mentors.png" alt="blog-image">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">{{blogs.title}}</h4>
+                            <div class="row">
+                                <h6>{{blogs.date}}</h6>
+
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <h6>{{blogs.author}}</h6>
+                                </div>
+
+                            </div>
+                            <p class="card-text">{{blogs.description}}</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+        {% endfor %}
     </div>
 </div>
