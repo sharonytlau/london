@@ -25,24 +25,27 @@
     - linkedin: https://www.linkedin.com/in/rajaniraog/
     
 - name: Eleonora Belova
-  position: QA Engineer at IBM Company, Director at Women Who Code London
+  position: QA Engineer at ReaQta, an IBM Company, Director at Women Who Code London
   type: both
   location: Amsterdam, Netherlands
-  bio: For me, volunteering is a great investment, a tool to develop skills, and an opportunity to gain experience while helping others! I am so excited about the opportunity to do even more as a Director! Can’t wait to brainstorm, discuss and create new things together!
+  bio: I am a passionate QA Engineer, have experience in testing Web Applications manually and using automation scripts, as well as API Testing (Postman, SOAP UI). I can support my mentees by sharing knowledge and helpful resources. I believe that testing is way more than just finding bugs and flaws, but looking at process and product from the user perspective. Since I am a big fan of exploratory testing, we can also test together during our mentorship sessions! Apart from the technical part I am interested in exploring different aspects in team communication, cross cultural collaboration and volunteering in professional communities!
   image: https://media.licdn.com/dms/image/C4E03AQEV0jEE1z0BbA/profile-displayphoto-shrink_800_800/0/1651913271528?e=1678320000&v=beta&t=zc9ZQRqg5_MBq1m_WRsqRyyZsJ5xDyfnGE6bktR6RgE
   languages: 
     - English
   network:
     - linkedin: https://www.linkedin.com/in/eleonora-belova-7069baa5/
-    - twitter: https://twitter.com/eleonora-belova
     - github: https://github.com/nora-weisser 
   skills: 
-    experience: 5-7 years
+    experience: 2 years
     areas: 
       - Quality Assurance
-    mentee: add some info here
+    mentee: I would love to connect with an open-minded early-career engineer, who is interested in learning new things in Software Testing, or wants to know how to navigate in career. I can also help people who are switched from different fields to Software Testing and provide guidance and resources.
     languages: Python, Html, CSS
-    extra: Test Automation, Quality Assurance, Functional Testing, Selenium WebDriver, Amazon Web Services
+    focus:
+      - switch career to IT
+      - grow from beginner to mid-level
+      - change specialisation within IT
+    extra: Test Automation, Quality Assurance, Starting career in IT, CV Review, Preparation for the Interview, Exploratory Testing, Web Testing (Manual & Automation), API Testing (Postman, SOAP UI), Python for Software Testers, Career Advice, ISTQB Foundation Certification Preparation guidelines
 
 - name: Irina Kamalova
   type: both
@@ -121,3 +124,30 @@
     extra: Resume review, mock interview, LinkedIn profile review and career growth advice
   network:
     - linkedin: www.linkedin.com/in/aishwarya-nair-data-scientist
+
+- name: Mr Andrew King
+  type: both
+  position: SRE at Dojo
+  bio: 15 Years as back-end developer, lots of systems, integration experience and SRE the last 5 years.  Been mentoring for about 10 years and find the role very fulfilling.
+  image: https://media.licdn.com/dms/image/C5603AQE0XArhruEvUQ/profile-displayphoto-shrink_400_400/0/1564754921783?e=1678924800&v=beta&t=cTGlgo8xfNjRy_P6bAnIcal5RV6O0TJyzWOZleE-c9A
+  location: Yorkshire, UK
+  languages:
+    - English
+  skills:
+    experience: 16+ years
+    areas:
+      - Site Reliability Engineering
+      - Engineering management
+      - Security
+      - Project Management
+    languages: C, Go, Python
+    focus:
+      - grow from mid-level to senior-level
+      - switch from IC to a management position
+      - switch career to IT
+      - grow beyond senior level
+      - grow from beginner to mid-level
+    mentee: Someone who will prioritise the mentor/mentee relationship.
+    extra: Team soft skills, managing upward, time management, difficult conversations. Design patterns, designing for resiliance and reliability, optimisation when [not] to.
+  network:
+    - linkedin: https://www.linkedin.com/in/andrewkingit/

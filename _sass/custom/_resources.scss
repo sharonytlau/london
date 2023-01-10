@@ -1,18 +1,39 @@
 .resources {
-    .blog{
+  
 
-    margin-bottom: 50px;
+  .card {
+    height: 100%;
+  }
 
-        .card-horizontal {
-            display: flex;
-            flex: 1 1 auto;
-        }
+  .card-body {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
 
-        .card-columns {
-          @include media-breakpoint-only(lg) {
-            column-count: 4;
-          }}
-   }
+      p {
+        margin-bottom: 30px;
+      }
+  }
+
+  .card-title{
+      margin-bottom: 10px;
+  }
+
+  .blog {
+
+    margin-bottom: 30px;
+
+    .card-horizontal {
+        display: flex;
+        flex: 1 1 auto;
+    }
+
+    .card-columns {
+      @include media-breakpoint-only(lg) {
+        column-count: 4;
+      }
+    }
+  }
 }
 
 
