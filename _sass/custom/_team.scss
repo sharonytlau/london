@@ -5,8 +5,23 @@
         width: 150px;
     }
 
+    .card {
+        height: 100%;
+    }
+    
+    .card-body {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    .card-title{
+        flex-grow: 1;
+    }
+
+    .contributors {
+        padding-bottom: 50px;
+    }
+
 }
 
-.contributors {
-    padding-buttom: 50px;
-}

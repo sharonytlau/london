@@ -5,19 +5,6 @@
 @import "resources";
 @import "team";
 
-.card {
-    height: 100%;
-}
-
-.card-body {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-}
-
-.card-title{
-    flex-grow: 1;
-}
 
 h1, h2, h3 {
     @extend .text-center;

@@ -3,14 +3,10 @@ layout: default
 title: Mentorship Resources
 ---
 
-
-<div class="resources container">
+<div class="container resources">
     <div class="material">
-        <h3 class="p-5">Mentorship Resources</h3>
-    </div>
+        <h1>Mentorship Resources</h1>
 
-
-    <div class="material">
         <div class="row g-3">
             {% for resources in site.data.resources %}
             <div class="col-12 col-md-6 col-lg-3">
@@ -28,37 +24,34 @@ title: Mentorship Resources
     </div>
 
     <div class="blog">
-        <h3 class="p-5">Mentorship Blog Posts</h3>
-    </div>
+        <h1>Mentorship Blog Posts</h1>
+        
+        {% for blog in site.data.blogs %}
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <div class="card">
+                        <div class="card-horizontal">
 
-    <div class="blog">
-        {% for blogs in site.data.blogs %}
-        <div class="row">
-            <div class="col-12 mt-3">
-                <div class="card">
-                    <div class="card-horizontal">
-
-                        <div class="img-square-wrapper">
-                            <img class="" src="assets/images/resources/checklist-mentors.png" alt="blog-image">
-                        </div>
-
-                        <div class="card-body">
-                            <h4 class="card-title">{{blogs.title}}</h4>
-                            <div class="row">
-                                <h6>{{blogs.date}}</h6>
-
-                                <div class="col-12 col-md-6 col-lg-3">
-                                    <h6>{{blogs.author}}</h6>
-                                </div>
-
+                            <div class="img-square-wrapper">
+                                <img src="assets/images/resources/checklist-mentors.png" alt="blog-image">
                             </div>
-                            <p class="card-text">{{blogs.description}}</p>
-                        </div>
 
+                            <div class="card-body">
+                                <h4 class="card-title">{{blog.title}}</h4>
+                                <p>{{blog.date}} | {{blog.author}}</p>
+                                <div class="card-content">
+                                    <p class="card-text">{{blog.description}}</p>
+                                    
+                                    <div class="link">
+                                        <a href="{{blog.link}}" target="_blank">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         {% endfor %}
     </div>
 </div>
