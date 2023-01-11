@@ -3,9 +3,9 @@ layout: default
 title: "Mentorship Program 4.0"
 ---
 
-{% include banner.html %}  
+{% include banner.html %}
 
-<main role="main" class="container">
+<div class="home container">
 
     <div class="row content">
         <div class="col">
@@ -17,14 +17,14 @@ title: "Mentorship Program 4.0"
     </div>
 
     <div class="row registration">
-        <div class="col mentor">
+        <div class="col-5 mentor">
             <p>You should apply to be a <span>mentor</span> if you:</p>
 
             <ul>
-                <li>1. want to extend your professional network</li>
-                <li>2. want to contribute to the community</li>
-                <li>3. you are ready to share expertise</li>
-                <li>4. you want to get a new perspective and learn from your mentees</li>
+                <li>1. Want to extend your professional network</li>
+                <li>2. Want to contribute to the community</li>
+                <li>3. You are ready to share expertise</li>
+                <li>4. You want to get a new perspective and learn from your mentees</li>
             </ul>
 
             <p>
@@ -32,15 +32,15 @@ title: "Mentorship Program 4.0"
             </p>
         </div>
         
-        <div class="col mentee">
+        <div class="col-5 mentee">
             You should apply to be a <span>mentee</span> if you:</p>
 
             <ul>
-                <li>1. want to start career in software engineering</li>
-                <li>2. want to find a better job</li>
-                <li>3. want to be promoted at work</li>
-                <li>4. want to apply for a leadership position</li>
-                <li>5. need support in advancing your career</li>
+                <li>1. Want to start career in software engineering</li>
+                <li>2. Want to find a better job</li>
+                <li>3. Want to be promoted at work</li>
+                <li>4. Want to apply for a leadership position</li>
+                <li>5. Need support in advancing your career</li>
             </ul> 
             <p><button onclick="location.href='/mentors';" >Join as a Mentee</button></p>
         </div>
@@ -48,7 +48,7 @@ title: "Mentorship Program 4.0"
 
     <div class="timeline">
         <h2>Timeline</h2>
-        
+
         <div class="row">
             <!-- added image but we should use icons and text, this is just an example. -->
             <div class="text-center"><img class="photo" src="/assets/images/timeline.png" alt="..."></div>
@@ -60,19 +60,33 @@ title: "Mentorship Program 4.0"
     
         <div class="row support-content">
             <div class="col-4">
-                <p>add_icon</p>
-                <p>Progress Tracking</p>
-                <p>We provide a template in Notion for tracking your process during the Mentorship Programme cycle</p>
+                <div class="card border-0">
+                    <p>icon</p>
+                    <div class="card-body">
+                        <h5 class="card-title">Progress Tracking</h5>
+                        <p>We provide a template in Notion for tracking your process during the Mentorship Programme cycle</p>
+                    </div>
+                </div>
             </div>
+
             <div class="col-4">
-                <p>add_icon</p>
-                <p>Catch-ups</p>
-                <p>To get to know each other and share experience we conduct catch-up sessions for mentors and mentees</p>
+                <div class="card border-0">
+                    <p>icon</p>
+                    <div class="card-body">
+                        <h5 class="card-title">Catch-ups</h5>
+                        <p>To get to know each other and share experience we conduct catch-up sessions for mentors and mentees</p>
+                    </div>
+                </div>
             </div>
+
             <div class="col-4">
-                <p>add_icon</p>
-                <p>General Support</p>
-                <p>We provide general support to address any queries during the Mentorship Programme cycle</p>
+                <div class="card border-0">
+                    <p>icon</p>
+                    <div class="card-body">
+                        <h5 class="card-title">General Support</h5>
+                        <p>We provide general support to address any queries during the Mentorship Programme cycle</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -106,4 +120,4 @@ title: "Mentorship Program 4.0"
             </a>
           </div>
     </div>
-</main>
+</div>
