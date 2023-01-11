@@ -8,12 +8,13 @@ title: Meet our community of mentors!
     <div class="description">
         Below you can see all our mentors. The Application starts is February, 2023.
     </div>
-    
+
     {% for mentor in site.data.mentors %}
-        <div class="card">
-            <div class="card-horizontal">
-                <div class="img-square-wrapper">
-                    <img class="profile-photo" src="{{mentor.image}}" alt="...">
+        <div class="card mb-3">
+            <div class="row no-gutters">
+                
+                <div class="col-md-3">
+                    <img src="{{mentor.image}}" class="card-img" alt="...">
                     <div class="network">
                         {% for network in mentor.network %}
                             {% if network.linkedin %}
@@ -40,29 +41,53 @@ title: Meet our community of mentors!
                     </div>
                 </div>
 
-                <div class="card-body">
-                    <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs">
-                          <li class="nav-item">
-                            <a class="nav-link active" href="#">Presentation</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
-                          </li>
-                        </ul>
-                      </div>
-                      
-                    <h4 class="card-title">
-                        {{mentor.name}}
-                    </h4>
-                    <h5 class="position">{{mentor.position}}</h5>
-                    <p class="card-text">{{mentor.bio}}</p>
-                    <div class="card-link">
-                        <a href="#" data-tf-popup="oQHsUP80" data-tf-iframe-props="title=Mentor Registration" data-tf-medium="snippet">Apply for this mentor</a>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active presentation" id="presentation-{{mentor.index}}" href="#">Presentation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link skills" id="skills-{{mentor.index}}" href="#">Skills</a>
+                            </li>
+                            </ul>
+                        </div>
+                        
+                        <h4 class="card-title">
+                            {{mentor.name}}
+                        </h4>
+                        <div class="card-presentation">
+                            <h5 class="position">{{mentor.position}}</h5>
+                            <p class="card-text">{{mentor.bio}}</p>
+                            <span class="more d-none">
+                                <p class="card-text"><label>Language</label>: {{mentor.languages}}</p>
+                                <p class="card-text"><label>Based on</label>: {{mentor.location}}</p>
+                            </span>
+                            <!-- TODO type (ad-hoc, long relationship and both) -->
+                        </div>
+                        <div class="card-skills d-none">
+                            <p class="card-text"><label>Experience</label>: {{mentor.skills.experience}}</p>
+                            <p class="card-text"><label>Ideal Mentee</label>: {{mentor.skills.mentee}}</p>
+                            <p class="card-text"><label>Programming languages</label>: {{mentor.skills.languages}}</p>
+                            <div class="more d-none">
+                                <p class="card-text">
+                                    <label>Areas to support the mentee:</label>: 
+                                    <ul>
+                                        {% for area in mentor.skills.areas %} 
+                                            <li>{{area}}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </p>
+                                <p class="card-text"><label>Potential mentoring topics</label>: {{mentor.skills.extra}}</p>
+                            </div>
+                        </div>
+                        <div class="card-link">
+                            <a href="#" data-tf-popup="oQHsUP80" data-tf-iframe-props="title=Mentor Registration" data-tf-medium="snippet">Apply for this mentor</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     {% endfor %}
-
-    </div>
+</div>
