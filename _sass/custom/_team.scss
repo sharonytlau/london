@@ -18,12 +18,7 @@
     .card-title{
         flex-grow: 1;
     }
-
-    .contributors {
-        padding-bottom: 50px;
-    }
-
-  .team-network {
+      .network {
       @extend .text-center;
 
       margin-top: 22px;
@@ -40,4 +35,7 @@
       }
   }
 
+    .contributors {
+        padding-bottom: 50px;   
+    }
 }

@@ -15,42 +15,8 @@ title: Meet our core team
                     <h5 class="card-title">{{person.name}}</h5>
                     <p>{{person.position}}</p>
                     <p>{{person.comment}}</p>
-                    <div class="team-network">
+                    <div class="network">
                         {% for network in person.network %}
-                        {% if network.name=="linkedin" %}
-                        <span> <a href="{{network.link}}" target="_blank"> {% include icons/linkedin.svg %}</a></span>
-                        {% endif %}
-                        {% if network.name=="twitter" %}
-                        <span> <a href="{{network.link}}" target="_blank"> {% include icons/twitter.svg %}</a></span>
-                        {% endif %}
-                        {% if network.name=="medium" %}
-                        <span> <a href="{{network.link}}" target="_blank"> {% include icons/medium.svg %}</a></span>
-                        {% endif %}
-                        {% if network.name=="github" %}
-                        <span> <a href="{{network.link}}" target="_blank"> {% include icons/github.svg %}</a></span>
-                        {% endif %}
-                        {% endfor %}
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-
-    <div class="contributors">
-        <h1>Contributors</h1>
-        <div class="row g-3">
-            {% for person in site.data.colaborators %}
-            <div class="col-12 col-md-6 col-lg-3 mx-auto p-5">
-                <div class="contributors card">
-                    <img src="{{person.image}}" alt="profile photo" class="profile photo card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">{{person.name}}</h5>
-                        <p>{{person.position}}</p>
-                        <p>{{person.comment}}</p>
-                        <div class="team-network">
-                            {% for network in person.network %}
                             {% if network.name=="linkedin" %}
                             <span> <a href="{{network.link}}" target="_blank"> {% include icons/linkedin.svg %}</a></span>
                             {% endif %}
@@ -63,6 +29,39 @@ title: Meet our core team
                             {% if network.name=="github" %}
                             <span> <a href="{{network.link}}" target="_blank"> {% include icons/github.svg %}</a></span>
                             {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="contributors">
+        <h1>Contributors</h1>
+        <div class="row g-3">
+            {% for person in site.data.colaborators %}
+            <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                <div class="contributors card">
+                    <img src="{{person.image}}" alt="profile photo" class="profile photo card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{person.name}}</h5>
+                        <p>{{person.position}}</p>
+                        <p>{{person.comment}}</p>
+                        <div class="network">
+                            {% for network in person.network %}
+                                {% if network.name=="linkedin" %}
+                                <span> <a href="{{network.link}}" target="_blank"> {% include icons/linkedin.svg %}</a></span>
+                                {% endif %}
+                                {% if network.name=="twitter" %}
+                                <span> <a href="{{network.link}}" target="_blank"> {% include icons/twitter.svg %}</a></span>
+                                {% endif %}
+                                {% if network.name=="medium" %}
+                                <span> <a href="{{network.link}}" target="_blank"> {% include icons/medium.svg %}</a></span>
+                                {% endif %}
+                                {% if network.name=="github" %}
+                                <span> <a href="{{network.link}}" target="_blank"> {% include icons/github.svg %}</a></span>
+                                {% endif %}
                             {% endfor %}
                         </div>
                     </div>
