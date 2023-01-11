@@ -23,5 +23,21 @@
         padding-bottom: 50px;
     }
 
-}
+  .team-network {
+      @extend .text-center;
 
+      margin-top: 22px;
+
+      a {
+          margin-left: 10px;
+          border-radius: 100%;
+
+          svg {
+              height: 30px;
+              width: 30px;
+              fill: $teal;
+          }
+      }
+  }
+
+}
