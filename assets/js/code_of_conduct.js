@@ -1,4 +1,4 @@
-var controller = (function(jQuery) {
+var controllerCodeOfConduct = (function(jQuery) {
     var menteeConduct = jQuery("#mentee-conduct");
     var mentorConduct = jQuery("#mentor-conduct");
     
@@ -61,4 +61,4 @@ var controller = (function(jQuery) {
 
 }(jQuery));
 
-controller.init();
+controllerCodeOfConduct.init();
