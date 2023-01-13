@@ -1,6 +1,12 @@
 .code-of-conduct {
+    
     .btn--outline-dark, .btn-outline-dark:hover, .btn-outline-dark:active, .btn--outline-dark:visited {
-    background-color: $teal !important;
+        background-color: $teal !important;
     }
-}
 
+    .btn {
+        @extend .btn-outline-dark;
+        @extend .col-md-2;
+    }
+    
+}
