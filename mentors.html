@@ -15,29 +15,8 @@ title: Meet our community of mentors!
                 
                 <div class="col-md-3">
                     <img src="{{mentor.image}}" class="card-img" alt="...">
-                    <div class="network">
-                        {% for network in mentor.network %}
-                            {% if network.linkedin %}
-                                <span><a href="{{network.linkedin}}" target="_blank">
-                                    {% include icons/linkedin.svg %}
-                                </a></span>
-                            {% endif %}
-                            {% if network.twitter %}
-                                <a href="{{network.twitter}}" target="_blank">
-                                    {% include icons/twitter.svg %}
-                                </a>
-                            {% endif %}
-                            {% if network.github %}
-                                <a href="{{network.github}}" target="_blank">
-                                    {% include icons/github.svg %}
-                                </a>
-                            {% endif %}
-                            {% if network.medium %}
-                                <a href="{{network.medium}}" target="_blank">
-                                    {% include icons/medium.svg %}
-                                </a>
-                            {% endif %}
-                        {% endfor %}
+                    <div class="card-link">
+                        <a href="#" class="btn btn-outline-primary" data-tf-popup="oQHsUP80" data-tf-iframe-props="title=Mentor Registration" data-tf-medium="snippet">Apply for this mentor</a>
                     </div>
                 </div>
 
@@ -70,6 +49,30 @@ title: Meet our community of mentors!
                             <p class="card-text"><label>Tech Experience</label>: {{mentor.skills.experience}}</p>
                             <p class="card-text"><label>Language(s)</label>: {{mentor.languages}}</p>
                             <p class="card-text"><label>Programming languages</label>: {{mentor.skills.languages}}</p>
+                            <p class="network">
+                                {% for network in mentor.network %}
+                                    {% if network.linkedin %}
+                                        <span><a href="{{network.linkedin}}" target="_blank">
+                                            {% include icons/linkedin.svg %}
+                                        </a></span>
+                                    {% endif %}
+                                    {% if network.twitter %}
+                                        <a href="{{network.twitter}}" target="_blank">
+                                            {% include icons/twitter.svg %}
+                                        </a>
+                                    {% endif %}
+                                    {% if network.github %}
+                                        <a href="{{network.github}}" target="_blank">
+                                            {% include icons/github.svg %}
+                                        </a>
+                                    {% endif %}
+                                    {% if network.medium %}
+                                        <a href="{{network.medium}}" target="_blank">
+                                            {% include icons/medium.svg %}
+                                        </a>
+                                    {% endif %}
+                                {% endfor %}
+                            </p>
                         </div>
 
                         <div id="mentees-{{mentor.index}}" class="card-mentees d-none">
@@ -90,11 +93,9 @@ title: Meet our community of mentors!
                                     {% endfor %}
                                 </ul>
                             </p>
-                            <p class="card-text"><label>Potential mentoring topics</label>: {{mentor.skills.extra}}</p>
-                        </div>
-
-                        <div class="card-link">
-                            <a href="#" data-tf-popup="oQHsUP80" data-tf-iframe-props="title=Mentor Registration" data-tf-medium="snippet">Apply for this mentor</a>
+                            {% if mentor.skills.extra %}
+                                <p class="card-text"><label>Potential mentoring topics</label>: {{mentor.skills.extra}}</p>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

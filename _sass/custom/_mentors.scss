@@ -20,6 +20,16 @@
         @extend .link;
     }
 
+    .btn {
+        @extend .btn-outline-dark;
+        @extend .link;
+        border-color: $teal;
+    }
+
+    .btn-outline-dark:hover {
+        background-color: $teal-600 !important;
+    }
+
     .card-header {
         li {
             cursor: pointer;
@@ -67,6 +77,7 @@
 
     .card-link {
         margin-top: 15px;
+        @extend .text-center;
     }
 
     .card-horizontal {
@@ -79,13 +90,11 @@
     }
 
     .network {
-        @extend .text-center;
-        
-        margin-top: 22px;
+        margin-top: 22px !important;
 
         a {
-            margin-left: 10px;
             border-radius: 100%;
+            padding-right: 15px;
             
             svg {
                 height: 30px;
