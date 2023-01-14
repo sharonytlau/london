@@ -1,0 +1,47 @@
+.code-of-conduct {
+    
+    .btn-outline-dark, .btn-outline-dark:hover, .btn-outline-dark:active, .btn-outline-dark:visited {
+        color: $white;
+        background-color: $teal !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        font-size: 20px;
+        border-radius: 6px;
+        padding: 0 33px;
+        font-weight: bold;
+        height: 50px;
+        cursor: pointer;
+        line-height: 50px;
+        text-align: center;
+        margin: 20px 0 0 0;
+        text-decoration: none;
+        border-width: 2px;
+    }
+
+    .btn-outline-dark:hover {
+        background-color: $teal-600 !important;
+    }
+    
+    .btn {
+        @extend .btn-outline-dark;
+    }
+
+    .section{
+        margin-bottom: 5rem;
+
+        li {
+            margin-bottom: 1rem;
+        }
+
+        ul li {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        font-weight: bold;
+        color: $teal;
+    }
+}
