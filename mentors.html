@@ -76,13 +76,14 @@ title: Meet our community of mentors!
                         </div>
 
                         <div id="mentees-{{mentor.index}}" class="card-mentees d-none">
-                            <p class="card-text" data-toggle="tooltip" data-placement="top" title="Tooltip on top testing">
+                            <p class="card-text" data-toggle="tooltip" data-html="true" title="<b>Ad-Hock:</b> request a session when necessary. <br><b>Long term relationship:</b> at least one mentoring program cycle.">
                                 <label>Type of mentoring</label>:  
                                 {% if mentor.type == 'both' %}
-                                    Ad-Hock and long term relationship
+                                    Ad-Hock or Long term relationship
                                 {% else %}
                                     {{mentor.type}}
                                 {% endif %}
+                                <span>{% include icons/question-fill.svg %}</span>
                             </p>
                             <p class="card-text justify-text"><label>Ideal Mentee</label>: {{mentor.skills.mentee}}</p>
                             <p class="card-text">

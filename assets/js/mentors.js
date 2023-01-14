@@ -2,6 +2,7 @@ var controllerMentors = (function(jQuery) {
     var skillsButton = jQuery(".skills");
     var presentationButton = jQuery(".presentation");
     var menteesButton = jQuery(".mentees");
+    var tooltip = jQuery('[data-toggle="tooltip"]');
 
     var classActive = "active";
     var classHide = "d-none";
@@ -37,9 +38,10 @@ var controllerMentors = (function(jQuery) {
     }
 
 
-    var init = function(){
+    var init = function() {
         initEvents();
         showPresentation();
+        tooltip.tooltip();
     };
 
     var initEvents = function() {
@@ -57,7 +59,7 @@ var controllerMentors = (function(jQuery) {
     };
 
     return {
-        init: initEvents
+        init: init
     };
 
 }(jQuery));
