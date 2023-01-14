@@ -63,7 +63,7 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
-$primary:       $blue !default;
+$primary:       $teal !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -234,6 +234,7 @@ $font-family-base:            $font-family-sans-serif !default;
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-md:                ($font-size-base * 1.125) !default;
 $font-size-sm:                ($font-size-base * .875) !default;
 
 $font-weight-light:           300 !default;
