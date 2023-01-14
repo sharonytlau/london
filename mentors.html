@@ -11,7 +11,7 @@ title: Meet our community of mentors!
 
     {% for mentor in site.data.mentors %}
         <div class="card mb-3">
-            <div class="row no-gutters">
+            <div class="row">
                 
                 <div class="col-md-3">
                     <img src="{{mentor.image}}" class="card-img" alt="...">
@@ -45,12 +45,15 @@ title: Meet our community of mentors!
                     <div class="card-body">
                         <div class="card-header">
                             <ul class="nav nav-tabs card-header-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link active presentation" id="bt-p-{{mentor.index}}" data-index="{{mentor.index}}" href="#bt-p-{{mentor.index}}">Presentation</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link skills" data-index="{{mentor.index}}" id="bt-s-{{mentor.index}}" href="#bt-s-{{mentor.index}}">Skills</a>
-                            </li>
+                                <li class="nav-item">
+                                    <div class="nav-link active presentation" id="bt-p-{{mentor.index}}" data-index="{{mentor.index}}">Presentation</div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="nav-link skills" data-index="{{mentor.index}}" id="bt-s-{{mentor.index}}">Skills</div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="nav-link mentees" data-index="{{mentor.index}}" id="bt-m-{{mentor.index}}">Mentees</div>
+                                </li>
                             </ul>
                         </div>
                         
@@ -59,29 +62,37 @@ title: Meet our community of mentors!
                         </h4>
                         <div id="presentation-{{mentor.index}}" class="card-presentation">
                             <h5 class="position">{{mentor.position}}</h5>
-                            <p class="card-text">{{mentor.bio}}</p>
-                            <span class="more d-none">
-                                <p class="card-text"><label>Language</label>: {{mentor.languages}}</p>
-                                <p class="card-text"><label>Based on</label>: {{mentor.location}}</p>
-                            </span>
-                            <!-- TODO type (ad-hoc, long relationship and both) -->
+                            <p class="card-text"><label>Based on</label>: {{mentor.location}}</p>
+                            <p class="card-text justify-text"><label>Bio</label>: {{mentor.bio}}</p>
                         </div>
+                        
                         <div id="skills-{{mentor.index}}" class="card-skills d-none">
-                            <p class="card-text"><label>Experience</label>: {{mentor.skills.experience}}</p>
-                            <p class="card-text"><label>Ideal Mentee</label>: {{mentor.skills.mentee}}</p>
+                            <p class="card-text"><label>Tech Experience</label>: {{mentor.skills.experience}}</p>
+                            <p class="card-text"><label>Language(s)</label>: {{mentor.languages}}</p>
                             <p class="card-text"><label>Programming languages</label>: {{mentor.skills.languages}}</p>
-                            <div class="more d-none">
-                                <p class="card-text">
-                                    <label>Areas to support the mentee:</label>: 
-                                    <ul>
-                                        {% for area in mentor.skills.areas %} 
-                                            <li>{{area}}</li>
-                                        {% endfor %}
-                                    </ul>
-                                </p>
-                                <p class="card-text"><label>Potential mentoring topics</label>: {{mentor.skills.extra}}</p>
-                            </div>
                         </div>
+
+                        <div id="mentees-{{mentor.index}}" class="card-mentees d-none">
+                            <p class="card-text" data-toggle="tooltip" data-placement="top" title="Tooltip on top testing">
+                                <label>Type of mentoring</label>:  
+                                {% if mentor.type == 'both' %}
+                                    Ad-Hock and long term relationship
+                                {% else %}
+                                    {{mentor.type}}
+                                {% endif %}
+                            </p>
+                            <p class="card-text justify-text"><label>Ideal Mentee</label>: {{mentor.skills.mentee}}</p>
+                            <p class="card-text">
+                                <label>Areas to support the mentee</label>: 
+                                <ul>
+                                    {% for area in mentor.skills.areas %} 
+                                        <li>{{area}}</li>
+                                    {% endfor %}
+                                </ul>
+                            </p>
+                            <p class="card-text"><label>Potential mentoring topics</label>: {{mentor.skills.extra}}</p>
+                        </div>
+
                         <div class="card-link">
                             <a href="#" data-tf-popup="oQHsUP80" data-tf-iframe-props="title=Mentor Registration" data-tf-medium="snippet">Apply for this mentor</a>
                         </div>

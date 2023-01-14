@@ -1,12 +1,40 @@
 
 .mentors {
-    a {
+    .card-img {
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    .col-md-3 {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .link {
         font-weight: $font-weight-bold !important;
         color: $teal;
     }
 
+    a {
+        @extend .link;
+    }
+
+    .card-header {
+        li {
+            cursor: pointer;
+            :hover {
+                text-decoration: underline;
+            }
+
+            .active {
+                @extend .link;
+            }
+        }
+    }
+
     .card-body {
-        min-height: 400px;
+        min-height: 500px;
         
         p {
             margin: 0;
@@ -29,6 +57,7 @@
 
     .card-title {
         padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .card {
@@ -42,7 +71,11 @@
 
     .card-horizontal {
         max-height: 400px;
+    }
 
+    .justify-text {
+        text-align: justify;
+        text-justify: inter-word;
     }
 
     .network {
@@ -59,6 +92,15 @@
                 width: 30px;
                 fill: $teal;
             }
+        }
+    }
+
+    .card-text {
+        margin-top: 10px !important;
+
+        label {
+            font-weight: $font-weight-bold !important;
+            margin-bottom: 0;
         }
     }
 }
