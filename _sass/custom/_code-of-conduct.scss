@@ -1,38 +1,17 @@
 .code-of-conduct {
-    
-    .btn-outline-dark, .btn-outline-dark:hover, .btn-outline-dark:active, .btn-outline-dark:visited {
-        color: $white;
-        background-color: $teal !important;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-
-        font-size: 20px;
-        border-radius: 6px;
-        padding: 0 33px;
-        font-weight: bold;
-        height: 50px;
-        cursor: pointer;
-        line-height: 50px;
-        text-align: center;
-        margin: 20px 0 0 0;
-        text-decoration: none;
-        border-width: 2px;
-    }
-
-    .btn-outline-dark:hover {
-        background-color: $teal-600 !important;
-    }
-    
-    .btn {
-        @extend .btn-outline-dark;
-    }
-
     .section{
         margin-bottom: 5rem;
 
         li {
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 1rem;
+            max-width: 75ch;
+
+            a {
+                font-weight: bold;
+                color: $teal;
+            }
         }
 
         ul li {
@@ -40,8 +19,7 @@
         }
     }
 
-    a {
-        font-weight: bold;
-        color: $teal;
+    .btn {
+        margin-top: 1.5rem;
     }
 }
