@@ -1,24 +1,44 @@
-- name: Ayla Cura
-  image: https://ca.slack-edge.com/TGYGA50DQ-U033JJFKZ7B-dd1dce68c353-512
-  comment: 
+- name: Lily Nguyen
+  image: https://media.licdn.com/dms/image/D4E03AQFZtayDJh0JVQ/profile-displayphoto-shrink_800_800/0/1664738008294?e=1678924800&v=beta&t=SzzHU81dMZSVpLMj2I3RBaKnXYx7Rum7dO4aBZ5246A
+  position: UX/UI Engineer
+  comment: Collaborate with the website
   network:
     - name: linkedin
-      link: https://www.linkedin.com/in/aylacura/
+      link: https://www.linkedin.com/in/lilynguyendk/
+    - name: github
+      link: https://www.linkedin.com/in/lilynguyendk/
       
 - name: Sumeyya Javaid
   image: https://ca.slack-edge.com/TGYGA50DQ-U030A8KK4R3-6acef534b898-512
-  comment: 
+  position: Full-stack Developer
+  comment: Collaborate with the website
   network:
     - name: linkedin
       link: https://www.linkedin.com/in/sumeyya-javaid/
     - name: twitter
       link: https://twitter.com/_jasum_
+    - name: github
+      link: https://github.com/j4sum
 
 - name: Naureen Imran
   image: https://ca.slack-edge.com/TGYGA50DQ-U048V8T2WTS-97cbbe7b60f4-512
-  comment: 
+  position: Full-stack Developer
+  comment: Collaborate with the website
   network:
     - name: linkedin
       link: https://www.linkedin.com/in/naureen-imran-744932227/
     - name: github
       link: https://github.com/goldfishdolphin
+
+- name: Ying Tung (Sharon) Lau
+  image: https://ca.slack-edge.com/TGYGA50DQ-U04AW322TC7-b596a9aabbac-512
+  position: Front-end Developer
+  comment: Collaborate with the website
+  network:
+    - name: linkedin
+      link: https://www.linkedin.com/in/yingtunglau/
+    - name: github
+      link: https://github.com/sharonytlau
+    - name: medium
+      link: https://blog.sharonytlau.xyz/
+

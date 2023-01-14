@@ -9,6 +9,32 @@
             <div class="col-xs-6 col-md-5">
                 <h5>Follow Us</h5>
                 <p class="justify-text">Join us on social media and stay tuned.</p>
+                <p class="network">
+                    {% for network in site.data.footer.network %}
+                        {% if network.linkedin %}
+                            <span> <a href="{{network.linkedin}}" target="_blank"> {% include icons/linkedin.svg %}</a></span>
+                        {% endif %}
+                        {% if network.twitter %}
+                            <span> <a href="{{network.twitter}}" target="_blank"> {% include icons/twitter.svg %}</a></span>
+                        {% endif %}
+                        {% if network.github %}
+                            <span> <a href="{{network.github}}" target="_blank"> {% include icons/github.svg %}</a></span>
+                        {% endif %}
+                        {% if network.medium %}
+                            <span> <a href="{{network.medium}}" target="_blank"> {% include icons/medium.svg %}</a></span>
+                        {% endif %}
+                        {% if network.meetup %}
+                            <span> <a href="{{network.meetup}}" target="_blank"> {% include icons/meetup.svg %}</a></span>
+                        {% endif %}
+                        {% if network.facebook %}
+                        <span> <a href="{{network.facebook}}" target="_blank"> {% include icons/facebook.svg %}</a></span>
+                        {% endif %}
+                        {% if network.youtube %}
+                        <span> <a href="{{network.youtube}}" target="_blank"> {% include icons/youtube.svg %}</a></span>
+                        {% endif %}
+                        
+                    {% endfor %}
+                </p>
              </div>
         </div>
     </div>

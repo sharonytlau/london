@@ -1,8 +1,26 @@
 
 .footer {
     background-color: $teal;
-    padding-top: 20px;
+    padding-top: 40px;
     text-align: left;
     color: $white;
+    min-height: 220px;
+
+    .network {
+        a {
+            border-radius: 100%;
+            padding-right: 10px;
+
+            svg, svg:hover {
+                height: 30px;
+                width: 30px;
+                fill: $white !important;
+            }
+
+            svg:hover {
+                fill: $gray-200 !important;
+            }
+        }
+    }
  }
 

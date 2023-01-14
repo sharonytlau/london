@@ -13,9 +13,9 @@ title: Meet our core team
                 <img src="{{person.image}}" alt="profile photo" class="profile photo card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">{{person.name}}</h5>
-                    <p>{{person.position}}</p>
-                    <p>{{person.comment}}</p>
-                    <div class="network">
+                    <p class="card-text">{{person.position}}</small></p>
+                    <p class="card-text"><small class="text-muted">{{person.comment}}</small></p>
+                    <span class="network">
                         {% for network in person.network %}
                             {% if network.name=="linkedin" %}
                             <span> <a href="{{network.link}}" target="_blank"> {% include icons/linkedin.svg %}</a></span>
@@ -30,7 +30,7 @@ title: Meet our core team
                             <span> <a href="{{network.link}}" target="_blank"> {% include icons/github.svg %}</a></span>
                             {% endif %}
                         {% endfor %}
-                    </div>
+                    </span>
                 </div>
             </div>
         </div>
@@ -46,9 +46,9 @@ title: Meet our core team
                     <img src="{{person.image}}" alt="profile photo" class="profile photo card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">{{person.name}}</h5>
-                        <p>{{person.position}}</p>
-                        <p>{{person.comment}}</p>
-                        <div class="network">
+                        <p class="card-text">{{person.position}}</p>
+                        <p class="card-text"><small class="text-muted">{{person.comment}}</small></p>
+                        <span class="network">
                             {% for network in person.network %}
                                 {% if network.name=="linkedin" %}
                                 <span> <a href="{{network.link}}" target="_blank"> {% include icons/linkedin.svg %}</a></span>
@@ -63,7 +63,7 @@ title: Meet our core team
                                 <span> <a href="{{network.link}}" target="_blank"> {% include icons/github.svg %}</a></span>
                                 {% endif %}
                             {% endfor %}
-                        </div>
+                        </span>
                     </div>
                 </div>
             </div>
