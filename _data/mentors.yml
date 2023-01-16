@@ -126,12 +126,12 @@
 
 - name: Mr Andrew King
   type: both
+  index: 5
   position: SRE at Dojo
   bio: 15 Years as back-end developer, lots of systems, integration experience and SRE the last 5 years.  Been mentoring for about 10 years and find the role very fulfilling.
   image: https://media.licdn.com/dms/image/C5603AQE0XArhruEvUQ/profile-displayphoto-shrink_400_400/0/1564754921783?e=1678924800&v=beta&t=cTGlgo8xfNjRy_P6bAnIcal5RV6O0TJyzWOZleE-c9A
   location: Yorkshire, UK
-  languages:
-    - English
+  languages: English
   skills:
     experience: 16+ years
     areas:
@@ -150,3 +150,25 @@
     extra: Team soft skills, managing upward, time management, difficult conversations. Design patterns, designing for resiliance and reliability, optimisation when [not] to.
   network:
     - linkedin: https://www.linkedin.com/in/andrewkingit/
+
+- name: Sandy Chuchuca
+  type: both
+  index: 6
+  position: Senior Software Engineer, MHFA and Women In PrimaryBid cochair at PrimaryBid
+  bio: Fullstack engineer, studied Computing Science, I always communite cycling and love a night out. My journey started as a backend engineer and soon I realised how fun was frontend too. I've worked mainly in start-ups.
+  image: https://media.licdn.com/dms/image/C4E03AQFCWtRB-3jQ4A/profile-displayphoto-shrink_800_800/0/1516879496498?e=1678924800&v=beta&t=pVSaJqYCNMSxumZjieZ2CU_z9d0gI54JmCDjAm5erTU
+  location: London, UK
+  languages: English, Spanish
+  skills:
+    experience: 10 years
+    areas:
+      - Web & Mobile development
+    languages: Javascript/Typescript, HTML/CSS, Java, Ruby
+    focus:
+      - switch career to IT
+      - grow from beginner to mid-level
+      - grow from mid-level to senior-level
+    mentee: Someone passionate that wants to boost her career journey.
+    extra: Productivity, networking
+  network:
+    - linkedin: https://github.com/sandycho

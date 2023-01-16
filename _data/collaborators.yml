@@ -42,3 +42,12 @@
     - name: medium
       link: https://blog.sharonytlau.xyz/
 
+- name: Sandy Chuchuca
+  image: https://media.licdn.com/dms/image/C4E03AQFCWtRB-3jQ4A/profile-displayphoto-shrink_800_800/0/1516879496498?e=1678924800&v=beta&t=pVSaJqYCNMSxumZjieZ2CU_z9d0gI54JmCDjAm5erTU
+  position: Senior Software Engineer
+  comment: Collaborate with the website
+  network:
+    - name: linkedin
+      link: https://www.linkedin.com/in/sandy-chuchuca-ordonez/
+    - name: github
+      link: https://github.com/sandycho

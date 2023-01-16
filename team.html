@@ -4,40 +4,42 @@ title: Meet our core team
 ---
 
 <div class="container team">
-    <h1>{{page.title}}</h1>
-    
-    <div class="row g-3">
-        {% for person in site.data.team %}
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="card">
-                <img src="{{person.image}}" alt="profile photo" class="profile photo card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">{{person.name}}</h5>
-                    <p class="card-text">{{person.position}}</small></p>
-                    <p class="card-text"><small class="text-muted">{{person.comment}}</small></p>
-                    <span class="network">
-                        {% for network in person.network %}
-                            {% if network.name=="linkedin" %}
-                            <span> <a href="{{network.link}}" target="_blank"> {% include icons/linkedin.svg %}</a></span>
-                            {% endif %}
-                            {% if network.name=="twitter" %}
-                            <span> <a href="{{network.link}}" target="_blank"> {% include icons/twitter.svg %}</a></span>
-                            {% endif %}
-                            {% if network.name=="medium" %}
-                            <span> <a href="{{network.link}}" target="_blank"> {% include icons/medium.svg %}</a></span>
-                            {% endif %}
-                            {% if network.name=="github" %}
-                            <span> <a href="{{network.link}}" target="_blank"> {% include icons/github.svg %}</a></span>
-                            {% endif %}
-                        {% endfor %}
-                    </span>
+    <div class="section">
+        <h1>{{page.title}}</h1>
+
+        <div class="row g-3">
+            {% for person in site.data.team %}
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="{{person.image}}" alt="profile photo" class="profile photo card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{person.name}}</h5>
+                        <p class="card-text">{{person.position}}</small></p>
+                        <p class="card-text"><small class="text-muted">{{person.comment}}</small></p>
+                        <span class="network">
+                            {% for network in person.network %}
+                                {% if network.name=="linkedin" %}
+                                <span> <a href="{{network.link}}" target="_blank"> {% include icons/linkedin.svg %}</a></span>
+                                {% endif %}
+                                {% if network.name=="twitter" %}
+                                <span> <a href="{{network.link}}" target="_blank"> {% include icons/twitter.svg %}</a></span>
+                                {% endif %}
+                                {% if network.name=="medium" %}
+                                <span> <a href="{{network.link}}" target="_blank"> {% include icons/medium.svg %}</a></span>
+                                {% endif %}
+                                {% if network.name=="github" %}
+                                <span> <a href="{{network.link}}" target="_blank"> {% include icons/github.svg %}</a></span>
+                                {% endif %}
+                            {% endfor %}
+                        </span>
+                    </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 
-    <div class="contributors">
+    <div class="section contributors">
         <h1>Contributors</h1>
         <div class="row g-3">
             {% for person in site.data.collaborators %}
@@ -69,5 +71,13 @@ title: Meet our core team
             </div>
             {% endfor %}
         </div>
+    </div>
+
+    <div class="section">
+        <h1>Feel free to join us as a contributor!</h1>
+
+        <p class="mt-4 d-flex justify-content-center">
+            <button class="btn btn-primary" data-tf-medium="snippet">Join the channel</button>
+        </p>
     </div>
 </div>
